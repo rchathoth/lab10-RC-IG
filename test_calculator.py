@@ -56,6 +56,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self): # 3 assertions
         self.assertRaises(ValueError, logarithm, 0, 3)
+        self.assertRaises(ValueError, logarithm, 10, -10)
 
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
