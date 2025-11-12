@@ -9,7 +9,11 @@ class TestCalculator(unittest.TestCase):
     # def test_subtract(self): # 3 assertions
     #     fill in code
     # ##########################
-
+    """
+    https://github.com/rchathoth/lab10-RC-IG.git
+    # Partner 1: Ishmael Goodridge
+    # Partner 2: Rohit Chathoth
+    """
     ######## Partner 1
     def test_multiply(self):
         a = 10
