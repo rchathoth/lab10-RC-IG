@@ -11,11 +11,34 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self):
+        a = 10
+        b = 5
+        if mul(a,b) != 50:
+            print("mul function failure")
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
+        a = 2
+        b = 0
+        if mul(a,b) != 0:
+            print("mul function failure")
+
+        a = 3
+        b = -1
+        if mul(a,b) != -3:
+            print("mul function failure")
+
+    def test_divide(self): # 3 assertions
+        a = 5
+        b = 10
+        if div(a,b) != 2:
+            print("div function failure")
+
+        self.assertRaises(ZeroDivisionError, div, 10, 0)
+
+        a = -3
+        b = 30
+        if div(a,b) != -10:
+            print("div function failure")
     # ##########################
 
     ######## Partner 2
@@ -34,21 +57,37 @@ class TestCalculator(unittest.TestCase):
     # ##########################
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
+    def test_log_invalid_argument(self):
+        self.assertRaises(ValueError, log, 0, 5)# 1 assertion
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        a = 3
+        b = 4
+        if hypotenuse(a,b) != 5:
+            print("hypotenuse function failure")
+
+        a = 6
+        b = 8
+        if hypotenuse(a,b) != 10:
+            print("hypotenuse function failure")
+
+        a = 9
+        b = 12
+        if hypotenuse(a,b) != 15:
+            print("hypotenuse function failure")
+
+    def test_sqrt(self): # 3 assertions
+        a = 4
+        if square_root(a) != 2:
+            print("sqrt function failure")
+
+        self.assertRaises(ValueError, square_root, -4)
+
+        a = 16
+        if square_root(a) != 4:
+            print("sqrt function failure")
+
     ##########################
 
 # Do not touch this
