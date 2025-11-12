@@ -24,12 +24,11 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
-    #
-        self.assertRaises(div(0,5), ZeroDivisionError)
+        self.assertRaises(ZeroDivisionError, div, 0, 5)
     #    
 
     def test_logarithm(self): # 3 assertions
-        self.assertRaises(log(0, 3), ValueError)
+        self.assertRaises(ValueError, log, 0, 3)
 
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
