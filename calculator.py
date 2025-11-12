@@ -1,8 +1,9 @@
-"""https://github.com/rchathoth/lab10-RC-IG.git
-# Partner 1: Ishmael Goodridge
-# Partner 2: Rohit Chathoth
 """
+calculator.py
+- Defines functions used to create a simple calculator
 
+One function per operation, in order.
+"""
 
 import math
 
@@ -17,7 +18,7 @@ def hypotenuse(a, b):
 def add(a, b):
     return a + b
 
-def subtract(a, b):
+def sub(a, b):
     return a - b
 
 def mul(a, b):
@@ -28,7 +29,7 @@ def div(a, b):
         raise ZeroDivisionError('division by zero')
     return b / a
 
-def logarithm(a, b):
+def log(a, b):
     if a == 0:
         raise ValueError("No log base 0")
     return math.log(b, a)
