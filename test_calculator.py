@@ -2,12 +2,16 @@ import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
-    ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+         self.assertEqual(add(1, 2), 3)
+         self.assertEqual(add(1, 1000), 1001)
+         self.assertEqual(add(-1, 2), 1)
+
+    def test_subtract(self): # 3 assertions
+        self.assertEqual(sub(1, 2), -1)
+        self.assertEqual(sub(100, 2), 98)
+        self.assertEqual(sub(0, 2), -2)
     # ##########################
     """
     https://github.com/rchathoth/lab10-RC-IG.git
@@ -46,14 +50,12 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+    def test_divide_by_zero(self): # 1 assertion
+        self.assertRaises(ZeroDivisionError, div, 0, 5)
+    #    
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertRaises(ValueError, log, 0, 3)
 
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
