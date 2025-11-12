@@ -1,3 +1,7 @@
+"""https://github.com/rchathoth/lab10-RC-IG.git
+# Partner 1: Ishmael Goodridge
+# Partner 2: Rohit Chathoth
+"""
 import unittest
 from calculator import *
 
@@ -13,11 +17,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sub(100, 2), 98)
         self.assertEqual(sub(0, 2), -2)
     # ##########################
-    """
-    https://github.com/rchathoth/lab10-RC-IG.git
-    # Partner 1: Ishmael Goodridge
-    # Partner 2: Rohit Chathoth
-    """
+
     ######## Partner 1
     def test_multiply(self):
         a = 10
