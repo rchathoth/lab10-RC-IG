@@ -1,7 +1,7 @@
-"""https://github.com/rchathoth/lab10-RC-IG.git
+# https://github.com/rchathoth/lab10-RC-IG.git
 # Partner 1: Ishmael Goodridge
 # Partner 2: Rohit Chathoth
-"""
+
 
 import math
 
