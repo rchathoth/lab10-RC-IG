@@ -30,6 +30,8 @@ def div(a, b):
 def logarithm(a, b):
     if a == 0:
         raise ValueError("No log base 0")
+    if b <=0:
+        raise ValueError("No negative base")
     return math.log(b, a)
     #loga(b) use math library + raise ValueError
 
