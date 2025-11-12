@@ -18,7 +18,7 @@ def mul(a, b):
 
 
 def log(a, b):
-    if a = 0:
+    if a == 0:
         raise ValueError("No log base 0")
     return math.log(b, a)
     #loga(b) use math library + raise ValueError
