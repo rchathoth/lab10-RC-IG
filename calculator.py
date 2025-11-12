@@ -26,11 +26,11 @@ def mul(a, b):
 
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError("division by zero")
-    return b / a # raise ZeroDivisionError if a == 0
+        raise ZeroDivisionError('division by zero')
+    return b / a
 
 def log(a, b):
-    if a = 0:
+    if a == 0:
         raise ValueError("No log base 0")
     return math.log(b, a)
     #loga(b) use math library + raise ValueError
