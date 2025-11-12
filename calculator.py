@@ -1,15 +1,5 @@
 import math
 
-
-def square_root(a):
-    try:
-        math.sqrt(a)
-    except:
-        print("Error: Cannot square root a negative number!")
-
-def hypotenuse(a, b): 
-    math.hypot(a, b)
-
 def add(a, b):
     return a + b
 
