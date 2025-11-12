@@ -1,3 +1,7 @@
+"""https://github.com/rchathoth/lab10-RC-IG.git
+# Partner 1: Ishmael Goodridge
+# Partner 2: Rohit Chathoth
+"""
 import unittest
 from calculator import *
 
@@ -9,15 +13,11 @@ class TestCalculator(unittest.TestCase):
          self.assertEqual(add(-1, 2), 1)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(1, 2), -1)
-        self.assertEqual(sub(100, 2), 98)
-        self.assertEqual(sub(0, 2), -2)
+        self.assertEqual(subtract(1, 2), -1)
+        self.assertEqual(subtract(100, 2), 98)
+        self.assertEqual(subtract(0, 2), -2)
     # ##########################
-    """
-    https://github.com/rchathoth/lab10-RC-IG.git
-    # Partner 1: Ishmael Goodridge
-    # Partner 2: Rohit Chathoth
-    """
+
     ######## Partner 1
     def test_multiply(self):
         a = 10
@@ -41,7 +41,7 @@ class TestCalculator(unittest.TestCase):
         if div(a,b) != 2:
             print("div function failure")
 
-        self.assertRaises(ZeroDivisionError, div, 10, 0)
+        self.assertRaises(ZeroDivisionError, div, 0, 10)
 
         a = -3
         b = 30
@@ -55,7 +55,7 @@ class TestCalculator(unittest.TestCase):
     #    
 
     def test_logarithm(self): # 3 assertions
-        self.assertRaises(ValueError, log, 0, 3)
+        self.assertRaises(ValueError, logarithm, 0, 3)
 
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
