@@ -41,7 +41,7 @@ class TestCalculator(unittest.TestCase):
         if div(a,b) != 2:
             print("div function failure")
 
-        self.assertRaises(ZeroDivisionError, div, 10, 0)
+        self.assertRaises(ZeroDivisionError, div, 0, 10)
 
         a = -3
         b = 30
