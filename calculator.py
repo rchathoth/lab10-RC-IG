@@ -1,9 +1,7 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/rchathoth/lab10-RC-IG.git
+# Partner 1: Ishmael Goodridge
+# Partner 2: Rohit Chathoth
 
-One function per operation, in order.
-"""
 
 import math
 
